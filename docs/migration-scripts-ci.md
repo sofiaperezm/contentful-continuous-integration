@@ -167,7 +167,7 @@ Registrar el nombre del archivo y el comando que se va a ejecutar.
 #### Resultados de la ejecución:
 Registrar si un script fue exitoso o falló, junto con detalles del error en caso de fallar.
 
-## Recursos adicionales
+## Recursos para consultar
 
 * [Documentación de contentful-migration](https://github.com/contentful/contentful-migration/blob/main/README.md#reference-documentation)
 
