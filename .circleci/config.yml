@@ -39,6 +39,10 @@ jobs:
           paths:
             - ./venv
           key: v1-dependencies-{{ checksum "requirements.txt" }}
+      
+      - run:
+          name: Grant execute permissions to migrate.js
+          command: chmod +x scripts/migrate.js
 
       - run:
           name: Preparing environment for testing
@@ -86,6 +90,10 @@ jobs:
             paths:
               - node_modules
             key: v1-dependencies-{{ checksum "package.json" }}
+        
+        - run:
+            name: Grant execute permissions to migrate.js
+            command: chmod +x scripts/migrate.js
 
         - run:
             name: Creating new master environment and setting master alias
